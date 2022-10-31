@@ -1,17 +1,16 @@
-try:
-    f1=open('data.txt','r')
-    data1=['31','12','1900']
-    while True:
-        data = f1.readline().split("-")
-        print(data)
-        if data[0] == '':
-            break
-        if int(data[0]) < int(data1[0]):
-            data1[0] = data[0]
-        if int(data[1]) < int(data1[1]):
-            data1[1] = data[1]
+# This is a sample Python script.
 
-    f1.close()
-    print(data1[0], "-", data1[1])
-except IOError:
-    print(IOError.with_traceback())
+# Press Shift+F10 to execute it or replace it with your code.
+# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+
+
+def print_hi(name):
+    # Use a breakpoint in the code line below to debug your script.
+    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+
+
+# Press the green button in the gutter to run the script.
+if __name__ == '__main__':
+    print_hi('PyCharm')
+
+# See PyCharm help at https://www.jetbrains.com/help/pycharm/
