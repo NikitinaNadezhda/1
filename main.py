@@ -15,3 +15,4 @@ try:
     print(data1[0], "-", data1[1])
 except IOError:
     print(IOError.with_traceback())
+
